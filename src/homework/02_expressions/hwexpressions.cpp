@@ -1,13 +1,15 @@
-#include "expressions.h"
 
-//example
-int add_numbers(int num1, int num2)
+#include "hwexpressions.h"
+
+double get_sales_tax_amount(double meal_amount)
 {
-	return num1 + num2;
+    const double tax_rate = 0.0675;
+    return tax_rate * meal_amount;
 }
 
-//write function code here
-
-
+double get_tip_amount(double meal_amount, double tip_rate)
+{
+    return (tip_rate/100) * meal_amount;
+}
 
 
