@@ -15,7 +15,7 @@ TEST_CASE ("Verify dna compliment") {
 	REQUIRE(get_dna_complement("CCCGGAAAAT") == "ATTTTCCGGG");
 }
 
-TEST_CASE ("Verify dna compliment") {
+TEST_CASE ("Verify gc content") {
 	REQUIRE(get_gc_content("AGCTATAG") == 0.375);
 	REQUIRE(get_gc_content("CGCTATAG") == 0.50);
 }
