@@ -7,8 +7,27 @@ and display them to screen.
 Program continues until user decides to exit.
 
 */
+
+#include <iostream>
+#include <string>
+#include "func.h"
+#include "func.cpp"
+
+using namespace std;
+
 int main() 
 {
 
+	string dna = "CCCGGbcdatAAAAT";
+	string reverse = reverse_string(dna);
+	string complement = get_dna_complement(dna);
+	string percentage = "CGCTATAG"; 
+
+	//bool result = complement == "ATTTTCCGGG";
+
+	//cout<< complement;
+	//cout << "\nBool: " << result;
+
+	cout << "Percentage of G or C is " << get_gc_content(percentage);
 	return 0;
 }
